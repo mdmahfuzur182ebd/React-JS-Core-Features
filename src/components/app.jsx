@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 import React from "react";
 import { Component } from "react";
 
