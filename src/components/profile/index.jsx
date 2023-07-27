@@ -7,6 +7,7 @@ import Links from "./Links";
 
 class Profile extends Component {
   render() {
+    //console.log('Profile -', this.props)
     return (
       <div className="Container">
         <Bio />
