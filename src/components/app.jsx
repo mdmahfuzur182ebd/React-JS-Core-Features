@@ -1,12 +1,11 @@
-import React from "react";
-import { Component } from "react";
+import React, { Component } from "react";
+import Profile from "./profile";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello React, You are Awesome</h1>
-        <p>JSX is Awesome and it"s Mean JavaScript Extension!</p>
+        <Profile />
       </div>
     );
   }

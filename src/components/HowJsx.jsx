@@ -37,7 +37,6 @@ export default USE_JSX;
 
 //  <>
 //     <p>
-//       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
-//       itaque laboriosam ipsa.
+//       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem itaque laboriosam ipsa.
 //     </p>
 //   </>
