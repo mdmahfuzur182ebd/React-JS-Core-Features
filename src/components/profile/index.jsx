@@ -1,45 +1,10 @@
 import React, { Component } from "react";
 import "./profile_style.css";
 
-const Bio = () => {
-  return (
-    <div className="Bio">
-      <h3>Md Mahfuzur Rahmna</h3>
-      <p>JavaScript Developer and code learning's</p>
-    </div>
-  );
-};
+import Bio from "./Bio";
+import Skills from "./skills";
+import Links from "./Links";
 
-const Skills = () => (
-  <div className="Skills">
-    <h3>Skills:</h3>
-    <ul>
-      <li>Java</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-    </ul>
-  </div>
-);
-
-const Links = () => (
-  <div className="Links">
-    <h3>Links:</h3>
-    <ul>
-      <li>
-        <a href="#">Facebook</a>
-      </li>
-      <li>
-        <a href="#">Twitter</a>
-      </li>
-      <li>
-        <a href="#">Linkedin</a>
-      </li>
-      <li>
-        <a href="#">Github</a>
-      </li>
-    </ul>
-  </div>
-);
 class Profile extends Component {
   render() {
     return (
