@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './app.css'
 
 import Button from "./button";
 import BoxA from "./box";
@@ -24,7 +25,7 @@ class App extends Component {
         >
           Another inline style{" "}
         </h1>
-        <Button />
+        <Button>Click Me!</Button>
         <BoxA />
         <BoxB />
       </div>

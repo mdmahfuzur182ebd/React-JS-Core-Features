@@ -1,9 +1,5 @@
 import React from "react";
 
-const Button = (props) => (
-  <div className="Bio">
-    <button>Click me</button>
-  </div>
-);
+const Button = (props) => <button {...props}>{props.children}</button>;
 
 export default Button;
