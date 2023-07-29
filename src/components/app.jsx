@@ -1,34 +1,35 @@
 import React, { Component } from "react";
 import "../index.css";
 
-import Profile from "./profile";
-//import Skills from "./profile/skills";
-import MyProps from "./Props/index";
-import Bio from "./profile/Bio";
-import Skills from "./profile/skills";
+class Child extends Component {
+  render() {
+    this.props.func(this);
+    return (
+      <div>
+        <h1>I am child</h1>
+      </div>
+    );
+  }
+}
 
 class App extends Component {
+  getContext(context) {
+    console.log(context);
+  }
+
   render() {
+    this.getContext(this);
     return (
       <div className="some">
-        <Profile />
-        <Bio name="SomeOne Developer " title="Java Developer" />
-
-        <div style={{ marginTop: "30px", marginBottom: "30px" }}>
-          <h3>List of Programmers</h3>
-          <p>Mr. X</p>
-          <Skills skillA="Python" skillB=
-          "Data Science" skillC="NLP"
-          />
-          <p>Mr. Y</p>
-          <Skills skillA="NodeJs" skillB="ExpressJs" skillC="MongoDb"/>
-          <MyProps name="Md Mahfuzur Rahman" />
-          <MyProps name="Something Do!" />
-        </div>
+        <h1>Pass Function as Props</h1>
+        <Child func={this.getContext} />
       </div>
     );
   }
 }
 
 export default App;
+
 //custom component taken attribute are call props
+// Pass function As props
+//p to child

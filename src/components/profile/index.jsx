@@ -30,3 +30,5 @@ class Profile extends Component {
 }
 
 export default Profile;
+//props used kore child component pass korte parijn.
+//function props
