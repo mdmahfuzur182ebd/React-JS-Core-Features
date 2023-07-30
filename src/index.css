@@ -1,6 +1,26 @@
 
 .btn{
+
    padding: 4px;
    background-color: rgb(71, 71, 70);
    color: white;
+}
+
+.Wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.Heading{
+   font-size: 48px;
+   font-weight: 300;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #222222;
+}
+
+.TestField {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
 }
