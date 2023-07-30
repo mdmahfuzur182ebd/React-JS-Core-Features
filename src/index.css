@@ -1,3 +1,6 @@
-.some {
-  margin: 0 auto;
+
+.btn{
+   padding: 4px;
+   background-color: rgb(71, 71, 70);
+   color: white;
 }
