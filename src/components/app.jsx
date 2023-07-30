@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../index.css";
 
-// Two way  Data Binding in React.
+// Text Field Blur and Focus Events in React .
 
 class App extends Component {
 
@@ -19,6 +19,17 @@ class App extends Component {
         this.setState({name: event.target.value})
   };
 
+  handleFocus = () =>{
+    console.log('I am Focus Event')
+  }
+
+  handleBlur= () =>{
+     if(!this.state.name){
+       alert('Pleases Enter Your Name')
+     }
+     console.log('I am blur Event')
+  }
+
 
   render() {
     return (
@@ -35,6 +46,9 @@ class App extends Component {
             placeholder="Enter some Test"
             value={this.state.name}
             onChange={this.handleChange}
+            onFocus={this.handleFocus}
+            onBlur={this.handleBlur}
+
           />
           <hr />
           <br />
