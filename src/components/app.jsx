@@ -1,17 +1,24 @@
 import React, { Component } from "react";
 import "../index.css";
 
-//Our First Event Handler-- event mean object -- event Name and function
+// Two way  Data Binding in React.
 
 class App extends Component {
+
+    state = {
+      name: ''
+    }
+
   handelButtonClick = (event) => {
     //console.log(event.target);
-    console.log("Button Click ..!");
+   // console.log("Button Click ..!");
   };
 
   handleChange = event => {
-        console.log(event.target.value)
+        //console.log(event.target.value)
+        this.setState({name: event.target.value})
   };
+
 
   render() {
     return (
@@ -26,8 +33,12 @@ class App extends Component {
             className="TestField"
             type="text"
             placeholder="Enter some Test"
+            value={this.state.name}
             onChange={this.handleChange}
           />
+          <hr />
+          <br />
+          {this.state.name && <h3>Welcome, {this.state.name}</h3>}
         </div>
       </div>
     );
